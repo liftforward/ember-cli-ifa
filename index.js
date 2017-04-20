@@ -86,7 +86,7 @@ module.exports = {
   },
 
   contentFor(type, config) {
-    if (type === 'head-footer' && config.ifa && config.ifa.enabled) {
+    if (type === 'head-footer' && config.ifa && config.ifa.inline) {
       return '<script>var __assetMapPlaceholder__ = __asset_map_placeholder__;</script>';
     }
   }
